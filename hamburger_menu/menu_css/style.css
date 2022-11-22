@@ -1,0 +1,74 @@
+:root{
+  --primary-color:rgba(13,110,139,0.75);
+  --secondary-color:rgba(229,148,0,0.9);
+  --overlay-color:rgba(24,39,51,0.85);
+  --menu-speed: 0.75s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  box-sizing: border-box;
+  text-align: center;
+  background: url('hamburger_menu\img\autri-taheri-l0Gq4BmboYY-unsplash.jpg');
+}
+
+.container{
+  max-width: 960px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+#showcase{
+  background: var(--primary-color);
+  color: #fff;
+  position:relative;
+  height: 100vh;
+}
+
+#showcase:before{
+  content: '';
+  background: url('../img/autri-taheri-l0Gq4BmboYY-unsplash.jpg') no-repeat center center/cover;
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+}
+
+#showcase .showcase-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#showcase h1{
+  font-size: 3rem;
+  margin-bottom:1.5rem;
+}
+
+#showcase p{
+  font-size:1.3rem;
+}
+
+.btn{
+  display:inline-block;
+  border: none;
+  margin: 1rem;
+  padding:10px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--secondary-color);
+  transition: all 1s ease-in-out;
+}
+
+.btn:hover{
+  opacity:0.7;
+}
